@@ -11885,6 +11885,7 @@ button.swiper-pagination-bullet {
   justify-content: center;
   align-items: center;
   background-color: blue;
+  margin-bottom: 220px;
 }
 .portfolio .pjt-top-full {
   padding: 0;
@@ -11908,16 +11909,18 @@ button.swiper-pagination-bullet {
   max-width: calc(50% - 24px);
   box-sizing: border-box;
   margin: 0 auto;
-  background-color: white;
+  background-color: #fff;
 }
 .portfolio .portfolio-wrap .portfolio-list .portfolio-line {
   display: flex;
   flex-direction: column;
   margin: 0;
 }
+.portfolio .portfolio-wrap .portfolio-list .portfolio-line:nth-child(even) {
+  margin-left: 12px;
+}
 .portfolio .portfolio-wrap .portfolio-list .portfolio-line .portfolio-item {
   flex: 1 1 30%;
-  margin: 12px;
 }
 .portfolio .portfolio-wrap .portfolio-list .portfolio-line .portfolio-item:first-child {
   margin-top: 0;
