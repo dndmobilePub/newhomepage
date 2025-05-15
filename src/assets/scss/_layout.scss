@@ -119,6 +119,7 @@
 		}
 	}
 }
+
 .main{
 	.panel {
 		// display:none;
@@ -281,8 +282,8 @@
 		position: relative;
 
 		.pjt-top-full {
-			background: url('../images/bg_intro.jpg') center no-repeat;
-			background-size: cover;
+			// background: url('../images/bg_intro.jpg') center no-repeat;
+			// background-size: cover;
 			height: 100vh;
 			@include vw-convert-pc(padding-top, 265);
 
@@ -1292,6 +1293,155 @@
 			@include vw-convert-pc(width, 100);
 			@include vw-convert-pc(bottom, 212);
 			@include vw-convert-pc(right, 352);
+		}
+	}
+
+
+	&.jb {
+
+		.pjt-top {
+			display: flex;
+			justify-content: space-between;
+			position: relative;
+			height: 100vh;
+			@include vw-convert-pc(padding-right, 140);
+
+			&::after {
+				content: '';
+				position: absolute;
+				z-index: 1;
+				top: 0; left: 0;
+				width: 100%;
+				height: 100%;
+				background: url(../images/bg_jb_top.png) no-repeat top center/ cover;
+			}
+			.pjt-title {
+				display:flex;
+				flex-direction:column;
+			}
+			.pjt-title,
+			.pjt-top-img {
+				position: relative;
+				z-index: 2;
+			}
+
+			.pjt-top-img {
+				position: absolute;
+				@include vw-convert-pc(width, 851);
+				@include vw-convert-pc(bottom, 0);
+				@include vw-convert-pc(right, 0);
+			}
+
+			.pjt-summary {
+				margin-top:auto;
+				margin-bottom:2rem;
+
+				&-list {
+					display: flex;
+					align-items: start;
+					height: 26px;
+
+					.tit {
+						font-weight: 700;
+						line-height: 1.16;
+						width: 140px;
+						@include vw-font-size-pc(16);
+						@include vw-convert-pc(width, 140);
+					}
+
+					p {
+						@include vw-font-size-pc(16);
+						font-weight: 400;
+						line-height: 1.16;	
+					}
+				}
+			
+			}
+		}
+	}
+	
+	&.samsung-life {
+
+		.pjt-top {
+
+			.img-award {
+				@include vw-convert-pc(padding-bottom, 24);
+
+				img{
+					@include vw-convert-pc(width, 52);
+					@include vw-convert-pc(height, 72);
+				}
+			}
+
+			&.white {
+			color: #fff;
+			}
+
+			display: flex;
+			justify-content: space-between;
+			position: relative;
+			height: 100vh;  //수정
+			// margin-bottom: 0;// -100vh
+			@include vw-convert-pc(padding-right, 140);
+
+			&::after {
+				content: '';
+				position: absolute;
+				z-index: 1;
+				top: 0; left: 0;
+				width: 100%;
+				height: 100%;
+				background: url(../images/bg_samsunglife_pc.png) no-repeat center center;
+				background-size: cover;
+			}
+			.pjt-title {
+				display:flex;
+				flex-direction:column;
+				position: relative;
+				z-index: 2;
+
+				.tit {
+
+					span {
+
+					}
+				}
+			}
+
+			// .pjt-top-img {
+			// 	@include vw-convert-pc(width, 851);
+			// 	// @include vw-convert-pc(bottom, -174);
+			// 	position: absolute;
+			// 	@include vw-convert-pc(bottom, 0);
+			// 	@include vw-convert-pc(right, 0);
+			// }
+
+			.pjt-summary {
+				// @include vw-convert-pc(margin-top, 320);
+				// @include vw-convert-pc(margin-bottom, 140);
+				margin-top:auto;
+				margin-bottom:2rem;
+
+				&-list {
+					display: flex;
+					align-items: start;
+					height: 26px;
+
+					.tit {
+						@include vw-font-size-pc(16);
+						font-weight: 700;
+						line-height: 1.16;
+						width: 140px;
+						@include vw-convert-pc(width, 140);
+					}
+
+					p {
+						@include vw-font-size-pc(16);
+						font-weight: 400;
+						line-height: 1.16;	
+					}
+				}
+			}
 		}
 	}
 }
@@ -2906,10 +3056,13 @@
 			}
 		}
 
+
+
 		&.woori-mz,
 		&.woori-won,
 		&.abl,
-		&.kica {
+		&.kica
+		 {
 			.pjt-top {
 				.pjt-title {
 					width: 100%;
@@ -2930,6 +3083,47 @@
 
 			.pjt-con {
 				@include vw-convert-tb(padding-top, 0);
+			}
+		}
+// 피그마에 없음.
+
+		&.jb{
+			.pjt-top {
+
+				.pjt-title {
+					width: 100%;
+					padding-top: 0;
+					@include vw-convert-tb(top, -120);
+
+					.desc {
+						@include vw-font-size-tb(20);
+					}
+				}
+
+				.pjt-top-img {
+				position: absolute;
+				@include vw-convert-tb(bottom, 0);
+				@include vw-convert-tb(right, 0);
+				padding: 0;
+				}
+			}
+		}
+
+		&.samsung-life{
+
+
+			.pjt-top {
+
+				.pjt-title {
+					width: 100%;
+					padding-top: 0;
+					@include vw-convert-tb(top, -120);
+
+					.desc {
+						@include vw-font-size-tb(20);
+					}
+				}
+
 			}
 		}
 
@@ -3991,6 +4185,112 @@
 			}
 		}
 
+		&.jb {
+			.pjt-top {
+				height: 100vw;
+				@include vw-convert-mo(padding, 0);
+				// position: relative;
+
+				.pjt-title {
+					width: 100%;
+					@include vw-convert-mo(padding, 60 40 0);
+
+					.tit {
+						padding-top: 0;
+						@include vw-convert-mo(padding, 0 0 32 0);
+						@include vw-font-size-mo(56);
+						font-weight: 900;
+
+						span {
+							line-height: 1.42;
+						}
+					}
+
+					.desc {
+						@include vw-font-size-mo(28);
+					}
+				}
+
+				.pjt-top-img {
+
+				}
+			}
+		}
+
+		&.samsung-life {
+
+			.pjt-top {
+				width: 100%;
+				min-height: 100vh; 
+				@include vw-convert-mo(padding, 0);
+				position: relative;
+
+				&::after {
+					content: '';
+					position: absolute;
+					width: 100%;
+					height: 100%;
+					background-repeat: no-repeat;
+					background-size: contain;
+					background-position: center;
+					background-image: url(../images/bg_samsunglife_mo.png);
+				}
+			
+
+				.pjt-title {
+					// width: 100%;
+					@include vw-convert-mo(padding, 60 40 0);
+
+					>.tit {
+						padding-top: 0;
+						@include vw-convert-mo(padding, 80 0 32 0);
+						@include vw-font-size-mo(56);
+						font-weight: 900;
+
+						span {
+							line-height: 1.42;
+						}
+					}
+
+					.desc {
+						@include vw-font-size-mo(28);
+					}
+				}
+
+				.pjt-summary {
+				margin-top: auto;
+				margin-bottom: 2rem;
+
+				&-list {
+					display: flex;
+					align-items: start;
+					height: 26px;
+					
+					.tit {
+						font-size: 14px;
+						font-weight: 700;
+						line-height: 1.16;
+						@include vw-convert-mo(width, 176);
+						@include vw-convert-mo(margin-right,24);
+						display: block;
+
+
+					}
+
+					p {
+						// @include vw-font-size-mo(14);
+						font-size: 14px;
+						font-weight: 400;
+						line-height: 1.16;
+						display: inline-block;
+					}
+				}
+			
+			}
+			}
+		}
+
+
 		&.woori-mz {
 			.pjt-top {
 				height: auto;
@@ -4128,13 +4428,68 @@
 			}
 		}
 
+		&.jb {
+			height: 100vh;
+
+			.pjt-top {
+				display: block;
+				height: auto;
+				@include vw-convert-mo(margin-top, 200);
+				margin-bottom: 0;
+
+				.pjt-title {
+				@include vw-convert-mo(padding, 0);
+				}
+
+				.pjt-top-img {
+					position: relative;
+					top: 0; right: 0;
+					width: 100%;
+					@include vw-convert-mo(padding, 0 40);
+
+					
+				}
+			}
+
+			.pjt-summary {
+				@include vw-convert-mo(margin-top, 67);
+				@include vw-convert-mo(margin-bottom, 97);
+
+				&-list {
+					display: flex;
+					align-items: start;
+					height: 26px;
+					
+					.tit {
+						font-size: 14px;
+						font-weight: 700;
+						line-height: 1.16;
+						@include vw-convert-mo(width, 176);
+						@include vw-convert-mo(margin-right,24);
+						display: block;
+
+
+					}
+
+					p {
+						// @include vw-font-size-mo(14);
+						font-size: 14px;
+						font-weight: 400;
+						line-height: 1.16;
+						display: inline-block;
+					}
+				}
+			
+			}
+		}
+
 		&.kica {
 			.pjt-top {
 				@include vw-convert-mo(padding-bottom, 200);
 				background-size: cover;
 
 				.pjt-top-img {
-					top: 0;
+					// top: 20px;
 					@include vw-convert-mo(padding, 40 0 40);
 
 					#lottie-kica-top {
@@ -4256,8 +4611,8 @@
 							.circle02 {
 								left: 50%;
 								-webkit-transform: translateX(-50%) !important;
-      					-ms-transform: translateX(-50%) !important;
-          			transform: translateX(-50%) !important;
+      							-ms-transform: translateX(-50%) !important;
+          						transform: translateX(-50%) !important;
 								width: 100%;
 								height: 64%;
 

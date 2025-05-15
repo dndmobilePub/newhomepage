@@ -1,3 +1,5 @@
 {
-  "liveServer.settings.port": 5501
+  "liveServer.settings.port": 5501,
+  "editor.bracketPairColorization.enabled": true,
+"editor.guides.bracketPairs": "active" // 활성 괄호에 가이드라인 표시
 }

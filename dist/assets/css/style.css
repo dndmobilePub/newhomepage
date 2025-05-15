@@ -1583,7 +1583,6 @@ button.swiper-pagination-bullet {
 
 .swiper-container-cube .swiper-slide {
   pointer-events: none;
-  -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   z-index: 1;
   visibility: hidden;
@@ -1618,7 +1617,6 @@ button.swiper-pagination-bullet {
 .swiper-container-cube .swiper-slide-shadow-left,
 .swiper-container-cube .swiper-slide-shadow-right {
   z-index: 0;
-  -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
 }
 
@@ -1640,7 +1638,6 @@ button.swiper-pagination-bullet {
 
 .swiper-container-flip .swiper-slide {
   pointer-events: none;
-  -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   z-index: 1;
 }
@@ -1659,7 +1656,6 @@ button.swiper-pagination-bullet {
 .swiper-container-flip .swiper-slide-shadow-left,
 .swiper-container-flip .swiper-slide-shadow-right {
   z-index: 0;
-  -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
 }
 
@@ -2585,8 +2581,7 @@ button.swiper-pagination-bullet {
 }
 
 [data-aos^=flip][data-aos^=flip] {
-  -webkit-backface-visibility: hidden;
-          backface-visibility: hidden;
+  backface-visibility: hidden;
   transition-property: transform;
 }
 
@@ -2959,8 +2954,6 @@ button.swiper-pagination-bullet {
   position: relative;
 }
 .pjt-con-wrap.intro-wrap .pjt-top-full {
-  background: url("../images/bg_intro.jpg") center no-repeat;
-  background-size: cover;
   height: 100vh;
   padding-top: 265px;
   padding-top: 13.8020833333vw;
@@ -4824,6 +4817,198 @@ button.swiper-pagination-bullet {
 @media (min-width: 1920px) {
   .pjt-con-wrap.kica .icon-absol {
     right: 352px;
+  }
+}
+.pjt-con-wrap.jb .pjt-top {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  height: 100vh;
+  padding-right: 140px;
+  padding-right: 7.2916666667vw;
+}
+@media (min-width: 1920px) {
+  .pjt-con-wrap.jb .pjt-top {
+    padding-right: 140px;
+  }
+}
+.pjt-con-wrap.jb .pjt-top::after {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url(../images/bg_jb_top.png) no-repeat top center/cover;
+}
+.pjt-con-wrap.jb .pjt-top .pjt-title {
+  display: flex;
+  flex-direction: column;
+}
+.pjt-con-wrap.jb .pjt-top .pjt-title,
+.pjt-con-wrap.jb .pjt-top .pjt-top-img {
+  position: relative;
+  z-index: 2;
+}
+.pjt-con-wrap.jb .pjt-top .pjt-top-img {
+  position: absolute;
+  width: 851px;
+  width: 44.3229166667vw;
+  bottom: 0px;
+  bottom: 0vw;
+  right: 0px;
+  right: 0vw;
+}
+@media (min-width: 1920px) {
+  .pjt-con-wrap.jb .pjt-top .pjt-top-img {
+    width: 851px;
+  }
+}
+@media (min-width: 1920px) {
+  .pjt-con-wrap.jb .pjt-top .pjt-top-img {
+    bottom: 0px;
+  }
+}
+@media (min-width: 1920px) {
+  .pjt-con-wrap.jb .pjt-top .pjt-top-img {
+    right: 0px;
+  }
+}
+.pjt-con-wrap.jb .pjt-top .pjt-summary {
+  margin-top: auto;
+  margin-bottom: 2rem;
+}
+.pjt-con-wrap.jb .pjt-top .pjt-summary-list {
+  display: flex;
+  align-items: start;
+  height: 26px;
+}
+.pjt-con-wrap.jb .pjt-top .pjt-summary-list .tit {
+  font-weight: 700;
+  line-height: 1.16;
+  width: 140px;
+  font-size: 16px;
+  font-size: 0.8333333333vw;
+  width: 140px;
+  width: 7.2916666667vw;
+}
+@media (min-width: 1920px) {
+  .pjt-con-wrap.jb .pjt-top .pjt-summary-list .tit {
+    font-size: 16px;
+  }
+}
+@media (min-width: 1920px) {
+  .pjt-con-wrap.jb .pjt-top .pjt-summary-list .tit {
+    width: 140px;
+  }
+}
+.pjt-con-wrap.jb .pjt-top .pjt-summary-list p {
+  font-size: 16px;
+  font-size: 0.8333333333vw;
+  font-weight: 400;
+  line-height: 1.16;
+}
+@media (min-width: 1920px) {
+  .pjt-con-wrap.jb .pjt-top .pjt-summary-list p {
+    font-size: 16px;
+  }
+}
+.pjt-con-wrap.samsung-life .pjt-top {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  height: 100vh;
+  padding-right: 140px;
+  padding-right: 7.2916666667vw;
+}
+.pjt-con-wrap.samsung-life .pjt-top .img-award {
+  padding-bottom: 24px;
+  padding-bottom: 1.25vw;
+}
+@media (min-width: 1920px) {
+  .pjt-con-wrap.samsung-life .pjt-top .img-award {
+    padding-bottom: 24px;
+  }
+}
+.pjt-con-wrap.samsung-life .pjt-top .img-award img {
+  width: 52px;
+  width: 2.7083333333vw;
+  height: 72px;
+  height: 3.75vw;
+}
+@media (min-width: 1920px) {
+  .pjt-con-wrap.samsung-life .pjt-top .img-award img {
+    width: 52px;
+  }
+}
+@media (min-width: 1920px) {
+  .pjt-con-wrap.samsung-life .pjt-top .img-award img {
+    height: 72px;
+  }
+}
+.pjt-con-wrap.samsung-life .pjt-top.white {
+  color: #fff;
+}
+@media (min-width: 1920px) {
+  .pjt-con-wrap.samsung-life .pjt-top {
+    padding-right: 140px;
+  }
+}
+.pjt-con-wrap.samsung-life .pjt-top::after {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url(../images/bg_samsunglife_pc.png) no-repeat center center;
+  background-size: cover;
+}
+.pjt-con-wrap.samsung-life .pjt-top .pjt-title {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  z-index: 2;
+}
+.pjt-con-wrap.samsung-life .pjt-top .pjt-summary {
+  margin-top: auto;
+  margin-bottom: 2rem;
+}
+.pjt-con-wrap.samsung-life .pjt-top .pjt-summary-list {
+  display: flex;
+  align-items: start;
+  height: 26px;
+}
+.pjt-con-wrap.samsung-life .pjt-top .pjt-summary-list .tit {
+  font-size: 16px;
+  font-size: 0.8333333333vw;
+  font-weight: 700;
+  line-height: 1.16;
+  width: 140px;
+  width: 140px;
+  width: 7.2916666667vw;
+}
+@media (min-width: 1920px) {
+  .pjt-con-wrap.samsung-life .pjt-top .pjt-summary-list .tit {
+    font-size: 16px;
+  }
+}
+@media (min-width: 1920px) {
+  .pjt-con-wrap.samsung-life .pjt-top .pjt-summary-list .tit {
+    width: 140px;
+  }
+}
+.pjt-con-wrap.samsung-life .pjt-top .pjt-summary-list p {
+  font-size: 16px;
+  font-size: 0.8333333333vw;
+  font-weight: 400;
+  line-height: 1.16;
+}
+@media (min-width: 1920px) {
+  .pjt-con-wrap.samsung-life .pjt-top .pjt-summary-list p {
+    font-size: 16px;
   }
 }
 
@@ -6887,6 +7072,60 @@ button.swiper-pagination-bullet {
   .pjt-con-wrap.woori-mz .pjt-con, .pjt-con-wrap.woori-won .pjt-con, .pjt-con-wrap.abl .pjt-con, .pjt-con-wrap.kica .pjt-con {
     padding-top: 0px;
     padding-top: 0vw;
+  }
+}
+@media screen and (max-width: 1440px) {
+  .pjt-con-wrap.jb .pjt-top .pjt-title {
+    width: 100%;
+    padding-top: 0;
+  }
+}
+@media screen and (max-width: 1440px) and (max-width: 1440px) {
+  .pjt-con-wrap.jb .pjt-top .pjt-title {
+    top: -120px;
+    top: -8.3333333333vw;
+  }
+}
+@media screen and (max-width: 1440px) {
+  .pjt-con-wrap.jb .pjt-top .pjt-title .desc {
+    font-size: 20px;
+    font-size: 1.3888888889vw;
+  }
+}
+@media screen and (max-width: 1440px) {
+  .pjt-con-wrap.jb .pjt-top .pjt-top-img {
+    position: absolute;
+    padding: 0;
+  }
+}
+@media screen and (max-width: 1440px) and (max-width: 1440px) {
+  .pjt-con-wrap.jb .pjt-top .pjt-top-img {
+    bottom: 0px;
+    bottom: 0vw;
+  }
+}
+@media screen and (max-width: 1440px) and (max-width: 1440px) {
+  .pjt-con-wrap.jb .pjt-top .pjt-top-img {
+    right: 0px;
+    right: 0vw;
+  }
+}
+@media screen and (max-width: 1440px) {
+  .pjt-con-wrap.samsung-life .pjt-top .pjt-title {
+    width: 100%;
+    padding-top: 0;
+  }
+}
+@media screen and (max-width: 1440px) and (max-width: 1440px) {
+  .pjt-con-wrap.samsung-life .pjt-top .pjt-title {
+    top: -120px;
+    top: -8.3333333333vw;
+  }
+}
+@media screen and (max-width: 1440px) {
+  .pjt-con-wrap.samsung-life .pjt-top .pjt-title .desc {
+    font-size: 20px;
+    font-size: 1.3888888889vw;
   }
 }
 @media screen and (max-width: 1440px) {
@@ -9162,6 +9401,190 @@ button.swiper-pagination-bullet {
   }
 }
 @media screen and (max-width: 767px) {
+  .pjt-con-wrap.jb .pjt-top {
+    height: 100vw;
+    padding: 0px;
+    padding: 0vw;
+  }
+}
+@media screen and (max-width: 767px) and (max-width: 767px) {
+  .pjt-con-wrap.jb .pjt-top {
+    padding: 0px;
+    padding: 0vw;
+  }
+}
+@media screen and (max-width: 767px) {
+  .pjt-con-wrap.jb .pjt-top .pjt-title {
+    width: 100%;
+    padding: 120px 80px 0px;
+    padding: 7.8226857888vw 5.2151238592vw 0vw;
+  }
+}
+@media screen and (max-width: 767px) and (max-width: 767px) {
+  .pjt-con-wrap.jb .pjt-top .pjt-title {
+    padding: 60px 40px 0px;
+    padding: 7.8226857888vw 5.2151238592vw 0vw;
+  }
+}
+@media screen and (max-width: 767px) {
+  .pjt-con-wrap.jb .pjt-top .pjt-title .tit {
+    padding-top: 0;
+    padding: 0px 0px 64px 0px;
+    padding: 0vw 0vw 4.1720990874vw 0vw;
+    font-size: 112px;
+    font-size: 7.3011734029vw;
+    font-weight: 900;
+  }
+}
+@media screen and (max-width: 767px) and (max-width: 767px) {
+  .pjt-con-wrap.jb .pjt-top .pjt-title .tit {
+    padding: 0px 0px 32px 0px;
+    padding: 0vw 0vw 4.1720990874vw 0vw;
+  }
+}
+@media screen and (max-width: 767px) and (max-width: 767px) {
+  .pjt-con-wrap.jb .pjt-top .pjt-title .tit {
+    font-size: 56px;
+    font-size: 7.3011734029vw;
+  }
+}
+@media screen and (max-width: 767px) {
+  .pjt-con-wrap.jb .pjt-top .pjt-title .tit span {
+    line-height: 1.42;
+  }
+}
+@media screen and (max-width: 767px) {
+  .pjt-con-wrap.jb .pjt-top .pjt-title .desc {
+    font-size: 56px;
+    font-size: 3.6505867014vw;
+  }
+}
+@media screen and (max-width: 767px) and (max-width: 767px) {
+  .pjt-con-wrap.jb .pjt-top .pjt-title .desc {
+    font-size: 28px;
+    font-size: 3.6505867014vw;
+  }
+}
+@media screen and (max-width: 767px) {
+  .pjt-con-wrap.samsung-life .pjt-top {
+    width: 100%;
+    min-height: 100vh;
+    padding: 0px;
+    padding: 0vw;
+    position: relative;
+  }
+}
+@media screen and (max-width: 767px) and (max-width: 767px) {
+  .pjt-con-wrap.samsung-life .pjt-top {
+    padding: 0px;
+    padding: 0vw;
+  }
+}
+@media screen and (max-width: 767px) {
+  .pjt-con-wrap.samsung-life .pjt-top::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    background-image: url(../images/bg_samsunglife_mo.png);
+  }
+}
+@media screen and (max-width: 767px) {
+  .pjt-con-wrap.samsung-life .pjt-top .pjt-title {
+    padding: 120px 80px 0px;
+    padding: 7.8226857888vw 5.2151238592vw 0vw;
+  }
+}
+@media screen and (max-width: 767px) and (max-width: 767px) {
+  .pjt-con-wrap.samsung-life .pjt-top .pjt-title {
+    padding: 60px 40px 0px;
+    padding: 7.8226857888vw 5.2151238592vw 0vw;
+  }
+}
+@media screen and (max-width: 767px) {
+  .pjt-con-wrap.samsung-life .pjt-top .pjt-title > .tit {
+    padding-top: 0;
+    padding: 160px 0px 64px 0px;
+    padding: 10.4302477184vw 0vw 4.1720990874vw 0vw;
+    font-size: 112px;
+    font-size: 7.3011734029vw;
+    font-weight: 900;
+  }
+}
+@media screen and (max-width: 767px) and (max-width: 767px) {
+  .pjt-con-wrap.samsung-life .pjt-top .pjt-title > .tit {
+    padding: 80px 0px 32px 0px;
+    padding: 10.4302477184vw 0vw 4.1720990874vw 0vw;
+  }
+}
+@media screen and (max-width: 767px) and (max-width: 767px) {
+  .pjt-con-wrap.samsung-life .pjt-top .pjt-title > .tit {
+    font-size: 56px;
+    font-size: 7.3011734029vw;
+  }
+}
+@media screen and (max-width: 767px) {
+  .pjt-con-wrap.samsung-life .pjt-top .pjt-title > .tit span {
+    line-height: 1.42;
+  }
+}
+@media screen and (max-width: 767px) {
+  .pjt-con-wrap.samsung-life .pjt-top .pjt-title .desc {
+    font-size: 56px;
+    font-size: 3.6505867014vw;
+  }
+}
+@media screen and (max-width: 767px) and (max-width: 767px) {
+  .pjt-con-wrap.samsung-life .pjt-top .pjt-title .desc {
+    font-size: 28px;
+    font-size: 3.6505867014vw;
+  }
+}
+@media screen and (max-width: 767px) {
+  .pjt-con-wrap.samsung-life .pjt-top .pjt-summary {
+    margin-top: auto;
+    margin-bottom: 2rem;
+  }
+  .pjt-con-wrap.samsung-life .pjt-top .pjt-summary-list {
+    display: flex;
+    align-items: start;
+    height: 26px;
+  }
+  .pjt-con-wrap.samsung-life .pjt-top .pjt-summary-list .tit {
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1.16;
+    width: 352px;
+    width: 22.9465449804vw;
+    margin-right: 48px;
+    margin-right: 3.1290743155vw;
+    display: block;
+  }
+}
+@media screen and (max-width: 767px) and (max-width: 767px) {
+  .pjt-con-wrap.samsung-life .pjt-top .pjt-summary-list .tit {
+    width: 176px;
+    width: 22.9465449804vw;
+  }
+}
+@media screen and (max-width: 767px) and (max-width: 767px) {
+  .pjt-con-wrap.samsung-life .pjt-top .pjt-summary-list .tit {
+    margin-right: 24px;
+    margin-right: 3.1290743155vw;
+  }
+}
+@media screen and (max-width: 767px) {
+  .pjt-con-wrap.samsung-life .pjt-top .pjt-summary-list p {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.16;
+    display: inline-block;
+  }
+}
+@media screen and (max-width: 767px) {
   .pjt-con-wrap.woori-mz .pjt-top {
     height: auto;
   }
@@ -9445,6 +9868,109 @@ button.swiper-pagination-bullet {
   }
 }
 @media screen and (max-width: 767px) {
+  .pjt-con-wrap.jb {
+    height: 100vh;
+  }
+  .pjt-con-wrap.jb .pjt-top {
+    display: block;
+    height: auto;
+    margin-top: 400px;
+    margin-top: 26.075619296vw;
+    margin-bottom: 0;
+  }
+}
+@media screen and (max-width: 767px) and (max-width: 767px) {
+  .pjt-con-wrap.jb .pjt-top {
+    margin-top: 200px;
+    margin-top: 26.075619296vw;
+  }
+}
+@media screen and (max-width: 767px) {
+  .pjt-con-wrap.jb .pjt-top .pjt-title {
+    padding: 0px;
+    padding: 0vw;
+  }
+}
+@media screen and (max-width: 767px) and (max-width: 767px) {
+  .pjt-con-wrap.jb .pjt-top .pjt-title {
+    padding: 0px;
+    padding: 0vw;
+  }
+}
+@media screen and (max-width: 767px) {
+  .pjt-con-wrap.jb .pjt-top .pjt-top-img {
+    position: relative;
+    top: 0;
+    right: 0;
+    width: 100%;
+    padding: 0px 80px;
+    padding: 0vw 5.2151238592vw;
+  }
+}
+@media screen and (max-width: 767px) and (max-width: 767px) {
+  .pjt-con-wrap.jb .pjt-top .pjt-top-img {
+    padding: 0px 40px;
+    padding: 0vw 5.2151238592vw;
+  }
+}
+@media screen and (max-width: 767px) {
+  .pjt-con-wrap.jb .pjt-summary {
+    margin-top: 134px;
+    margin-top: 8.7353324641vw;
+    margin-bottom: 194px;
+    margin-bottom: 12.6466753585vw;
+  }
+}
+@media screen and (max-width: 767px) and (max-width: 767px) {
+  .pjt-con-wrap.jb .pjt-summary {
+    margin-top: 67px;
+    margin-top: 8.7353324641vw;
+  }
+}
+@media screen and (max-width: 767px) and (max-width: 767px) {
+  .pjt-con-wrap.jb .pjt-summary {
+    margin-bottom: 97px;
+    margin-bottom: 12.6466753585vw;
+  }
+}
+@media screen and (max-width: 767px) {
+  .pjt-con-wrap.jb .pjt-summary-list {
+    display: flex;
+    align-items: start;
+    height: 26px;
+  }
+  .pjt-con-wrap.jb .pjt-summary-list .tit {
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1.16;
+    width: 352px;
+    width: 22.9465449804vw;
+    margin-right: 48px;
+    margin-right: 3.1290743155vw;
+    display: block;
+  }
+}
+@media screen and (max-width: 767px) and (max-width: 767px) {
+  .pjt-con-wrap.jb .pjt-summary-list .tit {
+    width: 176px;
+    width: 22.9465449804vw;
+  }
+}
+@media screen and (max-width: 767px) and (max-width: 767px) {
+  .pjt-con-wrap.jb .pjt-summary-list .tit {
+    margin-right: 24px;
+    margin-right: 3.1290743155vw;
+  }
+}
+@media screen and (max-width: 767px) {
+  .pjt-con-wrap.jb .pjt-summary-list p {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.16;
+    display: inline-block;
+  }
+}
+@media screen and (max-width: 767px) {
   .pjt-con-wrap.kica .pjt-top {
     padding-bottom: 400px;
     padding-bottom: 26.075619296vw;
@@ -9459,7 +9985,6 @@ button.swiper-pagination-bullet {
 }
 @media screen and (max-width: 767px) {
   .pjt-con-wrap.kica .pjt-top .pjt-top-img {
-    top: 0;
     padding: 80px 0px 80px;
     padding: 5.2151238592vw 0vw 5.2151238592vw;
   }
@@ -11240,4 +11765,168 @@ button.swiper-pagination-bullet {
   .layer-project-wrap .pjt-con-wrap.sc-aged .pjt-top-img {
     max-width: none;
   }
+}
+/*
+@media screen and (max-width:1440px) {
+
+ }
+*/
+.new-wrap {
+  background-color: #000;
+}
+.new-wrap .pjt-top-full {
+  display: flex;
+  padding-top: 0;
+  height: 100vh;
+}
+.new-wrap .videos-wrap {
+  width: 100vw;
+  height: 100vh;
+  min-width: 1004px;
+  position: relative;
+  overflow: hidden;
+}
+.new-wrap .video-background {
+  width: 100%;
+  height: 100%;
+}
+
+.thumnail {
+  padding-top: 0;
+  height: 100vh;
+  position: relative;
+}
+.thumnail .pjt-top-full {
+  padding-top: 0;
+}
+.thumnail .intro-thumnail .txt-wrap {
+  position: absolute;
+  background-color: #fff;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.thumnail .intro-thumnail .txt-wrap .txt {
+  font-size: 100px;
+  font-size: 5.2083333333vw;
+  font-weight: 600;
+  color: #000;
+  line-height: 1.2;
+  margin-bottom: 32px;
+  margin-bottom: 1.6666666667vw;
+  text-decoration: none;
+}
+@media (min-width: 1920px) {
+  .thumnail .intro-thumnail .txt-wrap .txt {
+    font-size: 100px;
+  }
+}
+@media (min-width: 1920px) {
+  .thumnail .intro-thumnail .txt-wrap .txt {
+    margin-bottom: 32px;
+  }
+}
+.thumnail .intro-thumnail .txt-wrap .txt .line {
+  white-space: nowrap;
+}
+.thumnail .intro-thumnail .txt-wrap .txt i {
+  font-style: normal;
+  color: #C9CACF;
+}
+.thumnail .intro-thumnail .txt-wrap .txt b {
+  color: #E30D40;
+}
+.thumnail .intro-thumnail .txt-wrap .txt .icon {
+  display: inline-block;
+  width: 80px;
+  width: 4.1666666667vw;
+  height: 80px;
+  height: 4.1666666667vw;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  vertical-align: middle;
+  margin: 0px 32px;
+  margin: 0vw 1.6666666667vw;
+}
+@media (min-width: 1920px) {
+  .thumnail .intro-thumnail .txt-wrap .txt .icon {
+    width: 80px;
+  }
+}
+@media (min-width: 1920px) {
+  .thumnail .intro-thumnail .txt-wrap .txt .icon {
+    height: 80px;
+  }
+}
+@media (min-width: 1920px) {
+  .thumnail .intro-thumnail .txt-wrap .txt .icon {
+    margin: 0px 32px;
+  }
+}
+.thumnail .intro-thumnail .txt-wrap .txt .icon._snow {
+  background-image: url(/dist/assets/images/svg/icon_snow_80.svg);
+}
+.thumnail .intro-thumnail .txt-wrap .txt .icon._arrow {
+  background-image: url(/dist/assets/images/svg/icon_arrow_80.svg);
+}
+
+.portfolio {
+  position: relative;
+  width: 100vw;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: blue;
+}
+.portfolio .pjt-top-full {
+  padding: 0;
+}
+.portfolio .portfolio-wrap {
+  display: flex;
+  position: relative;
+  width: 100%;
+  max-width: 1600px;
+  height: auto;
+  max-height: 1514px;
+  box-sizing: border-box;
+  overflow: hidden;
+  margin: 0 auto;
+  padding: 0 160px;
+}
+.portfolio .portfolio-wrap .portfolio-list {
+  display: flex;
+  flex: 1 1 50%;
+  flex-direction: row;
+  max-width: calc(50% - 24px);
+  box-sizing: border-box;
+  margin: 0 auto;
+  background-color: white;
+}
+.portfolio .portfolio-wrap .portfolio-list .portfolio-line {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+}
+.portfolio .portfolio-wrap .portfolio-list .portfolio-line .portfolio-item {
+  flex: 1 1 30%;
+  margin: 12px;
+}
+.portfolio .portfolio-wrap .portfolio-list .portfolio-line .portfolio-item:first-child {
+  margin-top: 0;
+}
+.portfolio .portfolio-wrap .portfolio-list .portfolio-line .portfolio-item:last-child {
+  margin-bottom: 0;
+}
+.portfolio .portfolio-wrap .portfolio-list .portfolio-line .portfolio-item img {
+  width: 100%;
+  height: auto;
+  max-width: 320px;
 }
