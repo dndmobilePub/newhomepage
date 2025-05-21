@@ -4,18 +4,47 @@
 
 <body>  
 	<div class="wrap main">
+
 		@@include('./include/header.html')
-		<section class="panel intro-panel" id="new-wrap">
-			@@include('./intro_dndmobile.html')
+		
+		<section class="panel intro-video" id="intro-video">
+			@@include('./intro_video.html')
 		</section>
 		<section class="panel thumnail" id="thumnail">
 			@@include('./intro_thumnail.html')
 		</section>
-		<!-- <section class="panel btm-aboutus" id="btm-aboutus">
+		<section class="panel btm-aboutus" id="btm-aboutus">
 			@@include('./btm_aboutus.html')
-		</section> -->
-		<!-- @@include('./include/footer.html') -->
+		</section>
+		<section class="panel project-jb" id="jb">
+			@@include('./project_jb.html')
+		</section>
+		<section class="panel project-samsung-life" id="samsung-life">
+			@@include('./project_samsung_life.html')
+		</section>
+			@@include('./include/footer.html')
 	</div>
 </body>
+
+<!-- 스크립트  -->
+
+<script>
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('active');
+    } else {
+      entry.target.classList.remove('active');
+    }
+  });
+}, {
+  threshold: 0.1, 
+  rootMargin: '0px 0px -50% 0px' 
+});
+
+document.querySelectorAll('section').forEach(section => {
+  observer.observe(section);
+});
+</script>
 
 </html>

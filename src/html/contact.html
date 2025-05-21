@@ -1,24 +1,18 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="en">
 @@include('./include/head.html')
 
 <body>
 	<div class="wrap">
 		@@include('./include/header.html')
-		<section class="contact-wrap">
+		<section class="contact-wrap" data-type="white">
 			<div class="inner">
 				<div class="title-wrap" data-aos="fade-up" data-aos-duration="1000">
-					<p>Contact Our Company</p>
-					<h2><strong>풍부한 경험과 전문성</strong>으로 <br class="hide-pc">보답합니다</h2>
-				</div>
-				<div class="map-wrap" data-aos="fade-up" data-aos-duration="1000">
-					<div id="map"></div>
-				</div>
-				<div class="info-wrap" data-aos="fade-up" data-aos-duration="1000">
-					<dl class="addr">
-						<dt>Address</dt>
-						<dd>서울시 마포구 월드컵북로2길 11 삼희빌딩 7F</dd>
-					</dl>
+					<!-- <p>Contact Our Company</p> --> <!--2025.05-20 삭제-->
+					<h2 class="contact-txt">WE WILL REPAY YOU WITH <br>ABUNDANT EXPERIENCE AND EXPERTISE</h2>
+				</div> 
+
+				<!-- <div class="info-wrap" data-aos="fade-up" data-aos-duration="1000">
 					<dl class="tel">
 						<dt>Office Line</dt>
 						<dd>
@@ -38,13 +32,40 @@
 						<dt>E-mail</dt>
 						<dd><a href="dndmobile@dndmobile.co.kr" target="_blank">dndmobile@dndmobile.co.kr</a></dd>
 					</dl>
+					<dl class="addr">
+						<dt>Address</dt>
+						<dd>서울시 마포구 월드컵북로2길 11 삼희빌딩 7F</dd>
+					</dl>
+				</div> -->
+				<div class="contact-info">
+					<div class="contact-item">
+						<span class="contact-label">Tel.</span>
+						<!-- <span class="title hide-pc">T.</span> -->
+						<span class="contact-number">+82 2 6446 2286</span>
+					</div>
+					<div class="contact-item">
+						<span class="contact-label">Fex.</span>
+						<!-- <span class="title hide-pc">F.</span> -->
+						<span class="contact-number">+82 2 6446 2284</span>
+					</div>
+					<div class="contact-item">
+						<span class="contact-label">Email.</span>
+						<!-- <span class="title hide-pc">E.</span> -->
+						<span class="contact-number"><a href="#">dndmobile@dndmobile.co.kr</a></span>
+					</div>
+				</div>
+				<!-- <div class="map-wrap" data-aos="fade-up" data-aos-duration="1000">
+					<div id="map"></div>
+				</div> -->
+				<div class="contact-map" data-aos="fade-up" data-aos-duration="1000">
+					<div id="map"></div>
 				</div>
 		</section>
-		@@include('./include/footer.html')
+			@@include('./include/footer.html')
 	</div>
 </body>
 
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB9pOeIxO44Vhf6VCi35iiO0tnkO1EqdsM&callback=initMap&libraries=marker,places&v=beta" defer ></script>
+<!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB9pOeIxO44Vhf6VCi35iiO0tnkO1EqdsM&callback=initMap&libraries=marker,places&v=beta" defer ></script> 
 <script>
 	function initMap() {
     // 맵 생성
@@ -73,6 +94,6 @@
   }
 
 	window.initMap = initMap;
-</script>
+</script> -->
 
 </html>

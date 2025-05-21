@@ -105,7 +105,8 @@ gulp.task('scss', function () {
       .pipe(scss(scssOptions).on('error', scss.logError))
       .pipe(postcss([autoprefixer()]))
       // .pipe(concat("style.css"))
-      // .pipe(sourcemaps.write('.'))
+      .pipe(sourcemaps.write('.'))
+      .pipe(sourcemaps.write("./maps"))
       .pipe(gulp.dest('dist/assets/css'))
       /**
        * SCSS 컴파일을 수행한 후 browserSync 로 브라우저에 반영
@@ -113,6 +114,7 @@ gulp.task('scss', function () {
       .pipe(browserSync.reload({
           stream : true
       }));
+
 });
 
 /**
