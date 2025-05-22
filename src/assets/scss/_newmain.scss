@@ -5,7 +5,17 @@
 
  }
 */
-
+.visually-hidden{
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  padding: 0 !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  clip: rect(0, 0, 0, 0) !important;
+  white-space: nowrap !important;
+  border: 0 !important;
+}
 
 .intro-video {
     background-color: #000;
@@ -595,20 +605,45 @@ height: 100%;
   
 
 &.kb-wallet,
-&.kb-remote {
+&.kb-remote,
+&.jb,
+&.samsung-life,
+&.hyundai-card,
+&.hana-card,
+&.woori-finance {
+  position: relative;
   width: 100vw;
   height: 100vh;
-  @include vw-convert-pc(padding-top, 127);
-  // @include vw-convert-pc(padding-bottom, 140);
+  // @include vw-convert-pc(padding-top, 207);
+  @include vw-convert-pc(padding-top, 128);
+  @include vw-convert-pc(padding-bottom, 120);
   @include vw-convert-pc(padding-left, 120);
+
+    .img-award {
+    padding: 0;
+    margin: 0;
+    img {
+      @include vw-convert-pc(max-width, 52);
+      @include vw-convert-pc(max-height, 72);
+    }
+  }
+
+  &.white {
+      p,h4 {
+    color: #fff;
+    padding: 0;
+  }
+  }
 
   .pjt {
 
     &-intro {
       display: flex;
+    
 
       .video-wrap {
         position: relative;
+        @include vw-convert-pc(margin-right, 206);
 
         &::after {
           content: "";
@@ -639,13 +674,15 @@ height: 100%;
 
     &-title {
       color: #1a1c23;
-      width: calc(100% / 2);
+      // width: calc(100% / 2);
+      width: 100%;
       height: 100%;
 
       .txt {
         font-weight: 700;
         line-height: 1.24;
         @include vw-font-size-pc(76);
+        @include vw-convert-pc(padding-top, 80);
 
         .client {
           font-weight: 400;
@@ -693,8 +730,10 @@ height: 100%;
 // kb-wallet만의 스타일
 &.kb-wallet {
   background: #F9DB6C;
+  height: 100vh;
   position: relative;
   overflow: hidden;
+  display: block;
 
   .pjt-intro {
     .video-wrap {
@@ -708,6 +747,7 @@ height: 100%;
 // kb-remote만의 스타일
 &.kb-remote {
   background: #fff;
+  // display: none;
 
   .pjt-intro {
     display: flex;
@@ -720,8 +760,206 @@ height: 100%;
     }
   }
 }
+// 전북은행(JB)만의 스타일
+&.jb {
+  background: #fff;
+  background: url(/dist/assets/images/bg_jb_top.png) no-repeat;
+  background-size: contain;
+  background-position: 100%;
+
+      .img-wrap {
+   position: fixed;
+    right: 0;         
+    bottom: 0;       
+    z-index: 1;
+
+    img {
+      // width: auto;
+      // height: auto;
+    @include vw-convert-pc(max-width, 970);
+    @include vw-convert-pc(max-height, 850);
+  }
+    }
+}
+// 삼성생명(samsung-life)만의 스타일
+&.samsung-life {
+  background: #fff;
+  background: url(/dist/assets/images/bg_samsunglife_pc.png) no-repeat;
+  background-size: cover;
+  background-position: 100%;
+
+  .pjt{
+    &-intro{
+
+    }
+
+    &-title {
+      .txt {
+        @include vw-convert-pc(padding-top, 24);
+      }
+    }
+  }
+}
+// 현대카드 (Hyundai Card)만의 스타일
+&.hyundai-card {
+ background: #fff;
+  background: url(/dist/assets/images/bg_hyundai_pc.png) no-repeat;
+  background-size: cover;
+  background-position: 100%;
+
+  .pjt{
+    &-intro{
+
+    }
+
+    &-title {
+      .txt {
+        @include vw-convert-pc(padding-top, 24);
+      }
+    }
+  }
+    
+  
+  .img-award {
+    padding: 0;
+    margin: 0;
+    img {
+      @include vw-convert-pc(max-width, 52);
+      @include vw-convert-pc(max-height, 72);
+    }
+  }
+}
+
+// 우리금융그룹 (Woori Financ  e Group)만의 스타일
+&.woori-finance {
+
+  .pjt{
+    &-title {
+      .txt {
+        @include vw-convert-pc(padding-top, 24);
+      }
+    }
+  }
+
+  .video-wrap {
+  position: relative;
+
+    &::before{
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    @include vw-convert-pc(width, 710);
+    @include vw-convert-pc(height, 715);
+    transform: translate(-50%, -50%);
+    background-image: url('/dist/assets/images/bg_wooriphone_pc.png'); // 원하는 이미지 경로
+    background-size: cover;
+    background-position: center;
+    z-index: 3;
+    pointer-events: none;
+    }
+
+    video {
+    width: 100%;
+    height: auto;
+    display: block;
+    z-index: 1;
+  }
+  }
+}
+
 
 }
+//new-header
+.pjt-header-wrap {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  @include vw-convert-pc(height, 80);
+  @include vw-convert-pc(padding-top, 26);
+  @include vw-convert-pc(padding-bottom, 27);
+  background-color: #000;
+  color: #fff;
+  @include vw-font-size-pc(20);
+  font-weight: 700;
+  z-index: 1;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+    @include vw-convert-pc(padding-right, 40);
+
+  // 중앙 텍스트
+  p {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 0;
+    white-space: nowrap;
+  }
+
+  // 우측 네비게이션 아이콘
+  .nav-swiper {
+    display: flex;
+    position: absolute;
+    right: 0;
+    @include vw-convert-pc(right, 80);
+    @include vw-convert-pc(height, 40);
+    // gap: 24px;
+
+    li {
+
+      // li 사이 간격
+      & + li {
+        @include vw-convert-pc(margin-left, 24);
+      }
+
+      // 아이콘 공통 스타일
+      a {
+        display: inline-block;
+        @include vw-convert-pc(width, 40);
+        @include vw-convert-pc(height, 40);
+        object-fit: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+        transition: all 0.3s ease-in-out;
+      }
+
+      // 각 아이콘별 이미지
+      .ico-prev {
+        background-image: url(/dist/assets/images/svg/ic_prev_gray40.svg);
+
+        &:hover,
+        &:focus {
+          background-image: url(/dist/assets/images/svg/ic_prev_white40.svg);
+        }
+      }
+
+      .ico-next {
+        background-image: url(/dist/assets/images/svg/ic_next_gray40.svg);
+
+        &:hover,
+        &:focus {
+          background-image: url(/dist/assets/images/svg/ic_next_white40.svg);
+        }
+      }
+
+      .ico-close {
+        background-image: url(/dist/assets/images/svg/ic_close40.svg);
+
+        &:hover,
+        &:focus {
+          transform: rotate(360deg);
+        }
+      }
+    }
+  }
+}
+
+
 
 @media (max-width:1004px) {
 

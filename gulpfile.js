@@ -101,11 +101,11 @@ const scssOptions = {
 gulp.task('scss', function () {
   return gulp
       .src(paths.scss)
-      // .pipe(sourcemaps.init())
+      .pipe(sourcemaps.init())
       .pipe(scss(scssOptions).on('error', scss.logError))
       .pipe(postcss([autoprefixer()]))
-      .pipe(concat("style.css"))
-      .pipe(sourcemaps.write('.'))
+      // .pipe(concat("style.css"))
+      // .pipe(sourcemaps.write('.'))
       .pipe(sourcemaps.write("./maps"))
       .pipe(gulp.dest('dist/assets/css'))
       /**
