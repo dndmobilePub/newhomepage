@@ -1,3 +1,4 @@
+<<<<<<< HEAD
  # DnD Mobile
 
 ## 설명
@@ -43,3 +44,6 @@ gulp
 3. project.html 변경시 data-content 경로 수정 필수! (data 호출하는 레이어팝업) 
 4. /(루트 폴더)에 html 파일 upload
 5. dndmobile 폴더에 assets 파일 업로드 
+=======
+
+>>>>>>> 1d93539596e60ca7c15fcc84f71b69740b79b0e1
