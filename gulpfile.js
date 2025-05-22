@@ -104,7 +104,7 @@ gulp.task('scss', function () {
       // .pipe(sourcemaps.init())
       .pipe(scss(scssOptions).on('error', scss.logError))
       .pipe(postcss([autoprefixer()]))
-      // .pipe(concat("style.css"))
+      .pipe(concat("style.css"))
       .pipe(sourcemaps.write('.'))
       .pipe(sourcemaps.write("./maps"))
       .pipe(gulp.dest('dist/assets/css'))

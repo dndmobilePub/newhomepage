@@ -155,7 +155,6 @@
           @include vw-font-size-pc(24);
           background-color: transparent;
           padding: 0;
-          transition: .3s opacity ease-in-out;
 
           &.g800{
             color: #24262d;
@@ -176,10 +175,6 @@
             .pf-eff {
               transform: translateY(0);
               cursor: default;
-            }
-
-            .thumb-label {
-              opacity: 0;
             }
           }
         }
@@ -590,6 +585,139 @@ height: 100%;
     }
 
 
+
+}
+
+
+//project 
+
+.pjt-con-wrap {
+  
+
+&.kb-wallet,
+&.kb-remote {
+  width: 100vw;
+  height: 100vh;
+  @include vw-convert-pc(padding-top, 127);
+  // @include vw-convert-pc(padding-bottom, 140);
+  @include vw-convert-pc(padding-left, 120);
+
+  .pjt {
+
+    &-intro {
+      display: flex;
+
+      .video-wrap {
+        position: relative;
+
+        &::after {
+          content: "";
+          display: block;
+          width: 100%;
+          height: 100%;
+          top: 0;
+          left: 0;
+          position: absolute;
+          background-position: 100% 100%;
+          background-repeat: no-repeat;
+          background-size: contain;
+          // z-index는 아래에서 분기 처리
+        }
+        
+        .wallet-video {
+          @include vw-convert-pc(width, 697);
+          @include vw-convert-pc(height, 750);
+          background-color: transparent;
+          display: block;
+          position: relative;
+          z-index: 2;
+        }
+      }
+    }
+
+    &-title {
+      color: #1a1c23;
+      width: calc(100% / 2);
+      height: 100%;
+
+      .txt {
+        font-weight: 700;
+        line-height: 1.24;
+        @include vw-font-size-pc(76);
+
+        .client {
+          font-weight: 400;
+        }
+      }
+
+      .desc {
+        @include vw-convert-pc(margin-top, 20);
+        font-weight: 400;
+        line-height: 1.6;
+        @include vw-font-size-pc(18);
+      }
+    }
+  }
+
+  .pjt-intro {
+    .pjt-summary {
+      color: #1a1c23;
+      font-weight: 700;
+      line-height: 1.6;
+      // @include vw-font-size-pc(16);
+      // @include vw-convert-pc(padding-top, 306);
+      position: absolute;
+      @include vw-convert-pc(bottom, 140);
+
+      .pjt-list {
+        display: flex;
+
+        .title {
+          @include vw-convert-pc(width, 140);
+        }
+
+        .info {
+          font-weight: 400;
+        }
+
+        + .pjt-list {
+          @include vw-convert-pc(margin-top, 12);
+        }
+      }
+    }
+  }
+}
+
+// kb-wallet만의 스타일
+&.kb-wallet {
+  background: #F9DB6C;
+  position: relative;
+  overflow: hidden;
+
+  .pjt-intro {
+    .video-wrap {
+      &::after {
+        background: none; 
+      }
+    }
+  }
+}
+
+// kb-remote만의 스타일
+&.kb-remote {
+  background: #fff;
+
+  .pjt-intro {
+    display: flex;
+     position: relative;
+    .video-wrap {
+      &::after {
+        background: url(/dist/assets/images/bg_kb_wallet_pc.png) no-repeat;
+        z-index: 1;
+      }
+    }
+  }
+}
 
 }
 
