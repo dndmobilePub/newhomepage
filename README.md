@@ -1,4 +1,4 @@
-# DnD Mobile
+ # DnD Mobile
 
 ## 설명
 
@@ -10,7 +10,7 @@
 
 1. Clone the repo
 ```
-git clone https://github.com/dndmobilePub/dndmobile.git
+git clone https://github.com/dndmobilePub/newhomepage.git
 ```
 2. Install NPM packages
 ```
@@ -42,4 +42,4 @@ gulp
 2. ftp_upload 폴더에서 한번 더 수정 후 ftp upload 진행 (ftp_upload 파일에서 진행하는 이유 : 폴더 구조 변경으로 인한 경로 수정)
 3. project.html 변경시 data-content 경로 수정 필수! (data 호출하는 레이어팝업) 
 4. /(루트 폴더)에 html 파일 upload
-5. dndmobile 폴더에 assets 파일 업로드
+5. dndmobile 폴더에 assets 파일 업로드 
