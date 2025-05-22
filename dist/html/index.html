@@ -1,30 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="keywords"
-        content="홈페이지제작, 웹사이트구축, 쇼핑몰제작, 쇼핑몰구축, 모바일웹사이트구축, 모바일홈페이지제작, 웹접근성구축, 웹접근성홈페이지제작, 웹표준구축, 웹표준홈페이지제작, 반응형웹구축, 반응형홈페이지제작, 검색엔진최적화, 사전컨설팅, UIUX컨설팅, si업체, 웹사이트디자인, 기업사이트디자인, 디자인제작, UIUX, seo, 기업웹사이트구축">
-    <title>디앤디모바일</title>
-    <link rel="icon" href="../assets/images/favicon.ico">
+  <head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta
+    name="keywords"
+    content="홈페이지제작, 웹사이트구축, 쇼핑몰제작, 쇼핑몰구축, 모바일웹사이트구축, 모바일홈페이지제작, 웹접근성구축, 웹접근성홈페이지제작, 웹표준구축, 웹표준홈페이지제작, 반응형웹구축, 반응형홈페이지제작, 검색엔진최적화, 사전컨설팅, UIUX컨설팅, si업체, 웹사이트디자인, 기업사이트디자인, 디자인제작, UIUX, seo, 기업웹사이트구축"
+  />
+  <title>디앤디모바일</title>
+  <link rel="icon" href="../assets/images/favicon.ico" />
 
-    <link rel="stylesheet" href="../assets/css/style.css">
-    <script src="../assets/js/jquery-3.6.0.min.js"></script>
-    <script src="../assets/js/swiper.min.js"></script>
-    <script src="../assets/js/gsap.min.js"></script>
+  <link rel="stylesheet" href="../assets/css/style.css" />
+  <script src="../assets/js/jquery-3.6.0.min.js"></script>
+  <script src="../assets/js/swiper.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <!-- <script src="../assets/js/gsap.min.js"></script>
     <script src="../assets/js/ScrollTrigger.min.js"></script>
-    <script src="../assets/js/ScrollToPlugin.min.js"></script>
-    <script src="../assets/js/aos.js"></script>
-    <script src="../assets/js/lottie.min.js"></script>
-    <script src="../assets/js/common.js" defer></script>
-    <script src="../assets/js/ui.js" defer></script>
+    <script src="../assets/js/ScrollToPlugin.min.js"></script> -->
+  <script src="../assets/js/aos.js"></script>
+  <script src="../assets/js/lottie.min.js"></script>
+  <script src="../assets/js/common.js" defer></script>
+  <script src="../assets/js/ui.js" defer></script>
 </head>
 
-<body>  
-	<div class="wrap main">
 
-		<!-- header -->
+  <body>
+    <div class="wrap main">
+      <!-- header -->
 <header>
 	<div class="header--inner">
 		<div class="hide-mobile">
@@ -269,11 +273,53 @@
 		</div>-->
 	</div>
 </section>
-		
-		<section class="panel intro-video" id="intro-video">
-			<section class="pjt-con-wrap intro-video" data-type="white">
-	<div class="pjt-top-full">
-		<div class="pjt-title">
+
+      <section class="panel intro-video" id="intro-video">
+        <section class="pjt-con-wrap intro-video" data-type="white">
+  <div
+    id="video-container"
+    style="width: 100vw; height: 100vh; position: relative"
+  >
+    <div id="video-overlay">
+      <div id="overlay-text">
+        <div class="txt-wrap">
+          <p class="txt">
+            <span class="line"> <i>WHAT </i><b>WE CREATE</b><i> ARE</i> </span
+            ><br />
+            <span class="line">
+              SENSORY TRENDS<span class="icon _arrow"></span>OPTIMAL </span
+            ><br />
+            <span class="line">
+              PERFORMANCE<span class="icon _snow"></span>FUN
+            </span>
+          </p>
+        </div>
+      </div>
+    </div>
+    <video
+      id="my-video"
+      style="width: 100vw; height: 100vh; object-fit: cover"
+      autoplay
+      loop
+      muted
+    >
+      <source
+        src="../assets/download/main_top_pc.mp4"
+        type="video/mp4"
+        class="hide-mobile"
+      />
+      <!-- <source
+        src="../assets/download/main_top_pc.mp4"
+        type="video/mp4"
+        class="hide-pc"
+      /> -->
+    </video>
+  </div>
+  
+</div>
+
+</section>
+<!-- <div class="pjt-title">
 
 			<div class="videos-wrap hide-mobile">
 				<video class="video-background" autoplay muted loop playsinline>
@@ -286,286 +332,266 @@
 				</video>
 			</div>
 
-		</div>
-	</div>
-</section>
+		</div> -->
 
+      </section>
+      <section class="panel thumnail" id="thumnail">
+        
+<section class="pjt-con-wrap thumnail" id="thumbnail-grid">
+			<div class="box-lst-wrap" >
+				<div class="cols">
+					<ul class="box-lst">
+						<li class="portfolio-item">
+							<div class="pf-item" role="button" tabindex="0">
+								<div class="pf-cont" aria-hidden="false">
+									<p class="portfolio-tit"></p>
+									<img class="thumb-img" src="/dist/assets/images/thum_samsung_s.png" alt="삼성생명">
+									<button class="thumb-btn" type="button" aria-label="해당화면으로 이동"></button>
+									<span class="thumb-label">삼성생명</span>
+								</div>
+								
+								<a href="#" class="pf-eff" role="button" aria-hidden="true">
+									<img class="pf-logo" src="/dist/assets/images/svg/award_blue.svg"alt="앱어워드로고">
+									<p class="pf-company">삼성그룹</p>
+									<p class="pf-desc">삼성생명</br>더핼스앱 고도화</p>
+								</a>
+							</div>
+						</li>
+						<li class="portfolio-item">
+							<div class="pf-item lg" role="button" tabindex="0">
+								<div class="pf-cont" aria-hidden="false">
+									<p class="portfolio-tit"></p>
+									<img class="thumb-img" src="/dist/assets/images/thum_wr_m.png" alt="우리금융그룹">
+									<button class="thumb-btn" type="button" aria-label="해당화면으로 이동" data-target="#"></button>
+									<span class="thumb-label">우리금융그룹</span>
 
-		</section>
-		<section class="panel thumnail" id="thumnail">
-			
-<section class="pjt-con-wrap thumnail" data-type="white">
-	<div class="pjt-top-full">
-		<div class="pjt-title">
-		<div class= "intro-thumnail">
-				<div class="txt-wrap">
-					<p class="txt">
-					<span class="line"> <i>WHAT </i><b>WE CREATE</b><i> ARE</i> </span><br>
-					<span class="line"> SENSORY TRENDS<span class="icon _arrow"></span>OPTIMAL </span><br>
-					<span class="line"> PERFORMANCE<span class="icon _snow"></span>FUN </span>
-					</p>
+								</div>
+								
+								<a href="#" class="pf-eff" role="button" aria-hidden="true">
+									<!-- <img class="pf-logo" src="/dist/assets/images/svg/award_blue.svg"alt="앱어워드로고"> -->
+									<p class="pf-company">우리금융그룹</p>
+									<p class="pf-desc">우리금융그룹</br>MZ플랫폼 위탁 운영</p>
+								</a>
+							</div>
+						</li>
+						<li class="portfolio-item">
+							<div class="pf-item lg" role="button" tabindex="0">
+								<div class="pf-cont" aria-hidden="false">
+									<p class="portfolio-tit"></p>
+									<img class="thumb-img" src="/dist/assets/images/thum_kika_m.png" alt="KIKA">
+									<span class="thumb-label">KIKA</span>
+								</div>
+								
+								<a href="#" class="pf-eff" role="button" aria-hidden="true">
+									<!-- <img class="pf-logo" src="/dist/assets/images/svg/award_blue.svg"alt="앱어워드로고"> -->
+									<p class="pf-company">KIKA</p>
+									<p class="pf-desc">KIKA</br>비대면 서비스 구축</p>
+								</a>
+							</div>
+						</li>
+					</ul>
+					<ul class="box-lst">
+						<li class="portfolio-item">
+							<div class="pf-item lg" role="button" tabindex="0">
+								<div class="pf-cont" aria-hidden="false">
+									<p class="portfolio-tit"></p>
+									<img class="thumb-img" src="/dist/assets/images/thum_kb_m.png" alt="KB금융그룹">
+									<button class="thumb-btn" type="button" aria-label="해당화면으로 이동" data-target="#"></button>
+									<span class="thumb-label g800">KB금융그룹</span>
+								</div>
+								
+								<a href="#" class="pf-eff" role="button" aria-hidden="true">
+									<!-- <img class="pf-logo" src="/dist/assets/images/svg/award_blue.svg"alt="앱어워드로고"> -->
+									<p class="pf-company">KB금융그룹</p>
+									<p class="pf-desc">KB국민은행</br>비대면 마케팅 Tool</p>
+								</a>
+							</div>
+						</li>
+						<li class="portfolio-item">
+							<div class="pf-item" role="button" tabindex="0">
+								<div class="pf-cont" aria-hidden="false">
+									<p class="portfolio-tit"></p>
+									<img class="thumb-img" src="/dist/assets/images/thum_sh_s.png" alt="수협은행">
+									<span class="thumb-label">수협은행</span>
+								</div>
+								
+								<a href="#" class="pf-eff" role="button" aria-hidden="true">
+									<img class="pf-logo" src="/dist/assets/images/consulting_logo.png"alt="컨설팅로고">
+									<p class="pf-company">수협은행</p>
+									<p class="pf-desc">비대면플랫폼</br>전략수립 및</br>인터넷뱅킹 재구축</p>
+								</a>
+							</div>
+						</li>
+						<li class="portfolio-item">
+							<div class="pf-item lg" role="button" tabindex="0">
+								<div class="pf-cont" aria-hidden="false">
+									<p class="portfolio-tit"></p>
+									<img class="thumb-img" src="/dist/assets/images/thum_lotte_m.png" alt="롯데웰푸드">
+									<span class="thumb-label">롯데웰푸드</span>
+								</div>
+								
+								<a href="#" class="pf-eff" role="button" aria-hidden="true">
+									<!-- <img class="pf-logo" src="/dist/assets/images/consulting_logo.png"alt="앱어워드로고"> -->
+									<p class="pf-company">롯데웰푸드</p>
+									<p class="pf-desc">롯데웰푸드</br>SFA 영업지원</br>시스템</p>
+								</a>
+							</div>
+						</li>
+					</ul>
 				</div>
-		<div>
 
-		<div class="box-lst-wrap">
-			<div class="cols">
-				<ul class="box-lst">
-					<li class="portfolio-item">
-						<div class="pf-item" role="button" tabindex="0">
-							<div class="pf-cont" aria-hidden="false">
-								<p class="portfolio-tit"></p>
-								<img class="thumb-img" src="/dist/assets/images/thum_samsung_s.png" alt="삼성생명">
-								<button class="thumb-btn" type="button" aria-label="해당화면으로 이동"></button>
-								<span class="thumb-label">삼성생명</span>
+				<div class="cols">
+					<ul class="box-lst">
+						<li class="portfolio-item">
+							<div class="pf-item" role="button" tabindex="0">
+								<div class="pf-cont" aria-hidden="false">
+									<p class="portfolio-tit"></p>
+									<img class="thumb-img" src="/dist/assets/images/thum_hd_s.png" alt="현대카드">
+									<button class="thumb-btn" type="button" aria-label="해당화면으로 이동" data-target="#"></button>
+									<span class="thumb-label">현대카드</span>
+								</div>
+								
+								<a href="#" class="pf-eff" role="button" aria-hidden="true">
+									<!-- <img class="pf-logo" src="/dist/assets/images/svg/award_blue.svg"alt="앱어워드로고"> -->
+									<p class="pf-company">현대카드</p>
+									<p class="pf-desc">현대카드</br>with M MALL</p>
+								</a>
 							</div>
-							
-							<a href="#" class="pf-eff" role="button" aria-hidden="true">
-								<img class="pf-logo" src="/dist/assets/images/svg/award_blue.svg"alt="앱어워드로고">
-								<p class="pf-company">삼성그룹</p>
-								<p class="pf-desc">삼성생명</br>더핼스앱 고도화</p>
-							</a>
-						</div>
-					</li>
-					<li class="portfolio-item">
-						<div class="pf-item lg" role="button" tabindex="0">
-							<div class="pf-cont" aria-hidden="false">
-								<p class="portfolio-tit"></p>
-								<img class="thumb-img" src="/dist/assets/images/thum_wr_m.png" alt="우리금융그룹">
-								<button class="thumb-btn" type="button" aria-label="해당화면으로 이동" data-target="#"></button>
-								<span class="thumb-label">우리금융그룹</span>
-
+						</li>
+						<li class="portfolio-item">
+							<div class="pf-item lg" role="button" tabindex="0">
+								<div class="pf-cont" aria-hidden="false">
+									<p class="portfolio-tit"></p>
+									<img class="thumb-img" src="/dist/assets/images/thum_abl_m.png" alt="ABL생명">
+									<span class="thumb-label">ABL생명</span>
+								</div>
+								
+								<a href="#" class="pf-eff" role="button" aria-hidden="true">
+									<!-- <img class="pf-logo" src="/dist/assets/images/svg/award_blue.svg"alt="앱어워드로고"> -->
+									<p class="pf-company">ABL생명</p>
+									<p class="pf-desc">ABL생명</br>보장분석 서비스<br>고도화</p>
+								</a>
 							</div>
-							
-							<a href="#" class="pf-eff" role="button" aria-hidden="true">
-								<!-- <img class="pf-logo" src="/dist/assets/images/svg/award_blue.svg"alt="앱어워드로고"> -->
-								<p class="pf-company">우리금융그룹</p>
-								<p class="pf-desc">우리금융그룹</br>MZ플랫폼 위탁 운영</p>
-							</a>
-						</div>
-					</li>
-					<li class="portfolio-item">
-						<div class="pf-item lg" role="button" tabindex="0">
-							<div class="pf-cont" aria-hidden="false">
-								<p class="portfolio-tit"></p>
-								<img class="thumb-img" src="/dist/assets/images/thum_kika_m.png" alt="KIKA">
-								<span class="thumb-label">KIKA</span>
+						</li>
+						<li class="portfolio-item">
+							<div class="pf-item lg" role="button" tabindex="0">
+								<div class="pf-cont" aria-hidden="false">
+									<p class="portfolio-tit"></p>
+									<img class="thumb-img" src="/dist/assets/images/thum_sc_m.png" alt="SC제일은행">
+									<button class="thumb-btn" type="button" aria-label="해당화면으로 이동" data-target="#"></button>
+									<span class="thumb-label">SC제일은행</span>
+								</div>
+								
+								<a href="#" class="pf-eff" role="button" aria-hidden="true">
+									<img class="pf-logo" src="/dist/assets/images/award_red.png" alt="앱어워드로고">
+									<p class="pf-company">SC제일은행</p>
+									<p class="pf-desc">SC제일은행</br>비즈니스 뱅킹</p>
+								</a>
 							</div>
-							
-							<a href="#" class="pf-eff" role="button" aria-hidden="true">
-								<!-- <img class="pf-logo" src="/dist/assets/images/svg/award_blue.svg"alt="앱어워드로고"> -->
-								<p class="pf-company">KIKA</p>
-								<p class="pf-desc">KIKA</br>비대면 서비스 구축</p>
-							</a>
-						</div>
-					</li>
-				</ul>
-				<ul class="box-lst">
-					<li class="portfolio-item">
-						<div class="pf-item lg" role="button" tabindex="0">
-							<div class="pf-cont" aria-hidden="false">
-								<p class="portfolio-tit"></p>
-								<img class="thumb-img" src="/dist/assets/images/thum_kb_m.png" alt="KB금융그룹">
-								<button class="thumb-btn" type="button" aria-label="해당화면으로 이동" data-target="#"></button>
-								<span class="thumb-label g800">KB금융그룹</span>
+						</li>
+					</ul>
+					<ul class="box-lst">
+						<li class="portfolio-item">
+							<div class="pf-item lg" role="button" tabindex="0">
+								<div class="pf-cont" aria-hidden="false">
+									<p class="portfolio-tit"></p>
+									<img class="thumb-img" src="/dist/assets/images/thum_hn_m.png" alt="하나금융그룹">
+									<button class="thumb-btn" type="button" aria-label="해당화면으로 이동" data-target="#"></button>
+									<span class="thumb-label">하나금융그룹</span>
+								</div>
+								
+								<a href="#" class="pf-eff" role="button" aria-hidden="true">
+									<img class="pf-logo" src="/dist/assets/images/svg/award_blue.svg"alt="앱어워드로고">
+									<p class="pf-company">하나금융그룹</p>
+									<p class="pf-desc">하나카드</br>하나머니앱 고도화</p>
+								</a>
 							</div>
-							
-							<a href="#" class="pf-eff" role="button" aria-hidden="true">
-								<!-- <img class="pf-logo" src="/dist/assets/images/svg/award_blue.svg"alt="앱어워드로고"> -->
-								<p class="pf-company">KB금융그룹</p>
-								<p class="pf-desc">KB국민은행</br>비대면 마케팅 Tool</p>
-							</a>
-						</div>
-					</li>
-					<li class="portfolio-item">
-						<div class="pf-item" role="button" tabindex="0">
-							<div class="pf-cont" aria-hidden="false">
-								<p class="portfolio-tit"></p>
-								<img class="thumb-img" src="/dist/assets/images/thum_sh_s.png" alt="수협은행">
-								<span class="thumb-label">수협은행</span>
+						</li>
+						<li class="portfolio-item">
+							<div class="pf-item lg" role="button" tabindex="0">
+								<div class="pf-cont" aria-hidden="false">
+									<p class="portfolio-tit"></p>
+									<img class="thumb-img" src="/dist/assets/images/thum_mr_m.png" alt="미래에셋생명">
+									<span class="thumb-label">미래에셋생명 </span>
+								</div>
+								
+								<a href="#" class="pf-eff" role="button" aria-hidden="true">
+									<img class="pf-logo" src="/dist/assets/images/svg/award_blue.svg"alt="앱어워드로고">
+									<p class="pf-company">미래에셋생명</p>
+									<p class="pf-desc">미래에셋생명</br>영업지원시스템<br>재구축</p>
+								</a>
 							</div>
-							
-							<a href="#" class="pf-eff" role="button" aria-hidden="true">
-								<img class="pf-logo" src="/dist/assets/images/consulting_logo.png"alt="컨설팅로고">
-								<p class="pf-company">수협은행</p>
-								<p class="pf-desc">비대면플랫폼</br>전략수립 및</br>인터넷뱅킹 재구축</p>
-							</a>
-						</div>
-					</li>
-					<li class="portfolio-item">
-						<div class="pf-item lg" role="button" tabindex="0">
-							<div class="pf-cont" aria-hidden="false">
-								<p class="portfolio-tit"></p>
-								<img class="thumb-img" src="/dist/assets/images/thum_lotte_m.png" alt="롯데웰푸드">
-								<span class="thumb-label">롯데웰푸드</span>
+						</li>
+						<li class="portfolio-item">
+							<div class="pf-item" role="button" tabindex="0">
+								<div class="pf-cont" aria-hidden="false">
+									<p class="portfolio-tit"></p>
+									<img class="thumb-img" src="/dist/assets/images/thum_nh_s.png" alt="NH농협생명">
+									<span class="thumb-label">NH농협생명</span>
+								</div>
+								
+								<a href="#" class="pf-eff" role="button" aria-hidden="true">
+									<img class="pf-logo" src="/dist/assets/images/consulting_logo.png"alt="컨설팅로고">
+									<p class="pf-company">NH농협생명</p>
+									<p class="pf-desc">NH농협생명</br>ISP 컨설팅 디자인</p>
+								</a>
 							</div>
-							
-							<a href="#" class="pf-eff" role="button" aria-hidden="true">
-								<!-- <img class="pf-logo" src="/dist/assets/images/consulting_logo.png"alt="앱어워드로고"> -->
-								<p class="pf-company">롯데웰푸드</p>
-								<p class="pf-desc">롯데웰푸드</br>SFA 영업지원</br>시스템</p>
-							</a>
-						</div>
-					</li>
-				</ul>
+						</li>
+					</ul>
+				</div>
 			</div>
-
-			<div class="cols">
-				<ul class="box-lst">
-					<li class="portfolio-item">
-						<div class="pf-item" role="button" tabindex="0">
-							<div class="pf-cont" aria-hidden="false">
-								<p class="portfolio-tit"></p>
-								<img class="thumb-img" src="/dist/assets/images/thum_hd_s.png" alt="현대카드">
-								<button class="thumb-btn" type="button" aria-label="해당화면으로 이동" data-target="#"></button>
-								<span class="thumb-label">현대카드</span>
-							</div>
-							
-							<a href="#" class="pf-eff" role="button" aria-hidden="true">
-								<!-- <img class="pf-logo" src="/dist/assets/images/svg/award_blue.svg"alt="앱어워드로고"> -->
-								<p class="pf-company">현대카드</p>
-								<p class="pf-desc">현대카드</br>with M MALL</p>
-							</a>
-						</div>
-					</li>
-					<li class="portfolio-item">
-						<div class="pf-item lg" role="button" tabindex="0">
-							<div class="pf-cont" aria-hidden="false">
-								<p class="portfolio-tit"></p>
-								<img class="thumb-img" src="/dist/assets/images/thum_abl_m.png" alt="ABL생명">
-								<span class="thumb-label">ABL생명</span>
-							</div>
-							
-							<a href="#" class="pf-eff" role="button" aria-hidden="true">
-								<!-- <img class="pf-logo" src="/dist/assets/images/svg/award_blue.svg"alt="앱어워드로고"> -->
-								<p class="pf-company">ABL생명</p>
-								<p class="pf-desc">ABL생명</br>보장분석 서비스<br>고도화</p>
-							</a>
-						</div>
-					</li>
-					<li class="portfolio-item">
-						<div class="pf-item lg" role="button" tabindex="0">
-							<div class="pf-cont" aria-hidden="false">
-								<p class="portfolio-tit"></p>
-								<img class="thumb-img" src="/dist/assets/images/thum_sc_m.png" alt="SC제일은행">
-								<button class="thumb-btn" type="button" aria-label="해당화면으로 이동" data-target="#"></button>
-								<span class="thumb-label">SC제일은행</span>
-							</div>
-							
-							<a href="#" class="pf-eff" role="button" aria-hidden="true">
-								<img class="pf-logo" src="/dist/assets/images/award_red.png" alt="앱어워드로고">
-								<p class="pf-company">SC제일은행</p>
-								<p class="pf-desc">SC제일은행</br>비즈니스 뱅킹</p>
-							</a>
-						</div>
-					</li>
-				</ul>
-				<ul class="box-lst">
-					<li class="portfolio-item">
-						<div class="pf-item lg" role="button" tabindex="0">
-							<div class="pf-cont" aria-hidden="false">
-								<p class="portfolio-tit"></p>
-								<img class="thumb-img" src="/dist/assets/images/thum_hn_m.png" alt="하나금융그룹">
-								<button class="thumb-btn" type="button" aria-label="해당화면으로 이동" data-target="#"></button>
-								<span class="thumb-label">하나금융그룹</span>
-							</div>
-							
-							<a href="#" class="pf-eff" role="button" aria-hidden="true">
-								<img class="pf-logo" src="/dist/assets/images/svg/award_blue.svg"alt="앱어워드로고">
-								<p class="pf-company">하나금융그룹</p>
-								<p class="pf-desc">하나카드</br>하나머니앱 고도화</p>
-							</a>
-						</div>
-					</li>
-					<li class="portfolio-item">
-						<div class="pf-item lg" role="button" tabindex="0">
-							<div class="pf-cont" aria-hidden="false">
-								<p class="portfolio-tit"></p>
-								<img class="thumb-img" src="/dist/assets/images/thum_mr_m.png" alt="미래에셋생명">
-								<span class="thumb-label">미래에셋생명 </span>
-							</div>
-							
-							<a href="#" class="pf-eff" role="button" aria-hidden="true">
-								<img class="pf-logo" src="/dist/assets/images/svg/award_blue.svg"alt="앱어워드로고">
-								<p class="pf-company">미래에셋생명</p>
-								<p class="pf-desc">미래에셋생명</br>영업지원시스템<br>재구축</p>
-							</a>
-						</div>
-					</li>
-					<li class="portfolio-item">
-						<div class="pf-item" role="button" tabindex="0">
-							<div class="pf-cont" aria-hidden="false">
-								<p class="portfolio-tit"></p>
-								<img class="thumb-img" src="/dist/assets/images/thum_nh_s.png" alt="NH농협생명">
-								<span class="thumb-label">NH농협생명</span>
-							</div>
-							
-							<a href="#" class="pf-eff" role="button" aria-hidden="true">
-								<img class="pf-logo" src="/dist/assets/images/consulting_logo.png"alt="컨설팅로고">
-								<p class="pf-company">NH농협생명</p>
-								<p class="pf-desc">NH농협생명</br>ISP 컨설팅 디자인</p>
-							</a>
-						</div>
-					</li>
-				</ul>
-			</div>
-		</div>
 
 			<div class="pf-btn-wrap">
 				<button class="btn" type="button">View more</button>
 			</div>
-		</div>
-	</div>
-</section>
-
-
-		</section>
-		<section class="panel btm-aboutus" id="btm-aboutus">
-			
-<section class="pjt-con-wrap btm-aboutus" data-type="white">
-	<div class="pjt-top-full">
-		<div class="pjt-title">
-			<div class="btm-banner-wrap">
-				<a role="button" class="about-banner" href="#">
-					<p class="btm-title">ABOUT US</p>
-					<span class="btm-txt">아름다운 디지털 환경을 만들어 갑니다</span>
-					<span class="view-more-btn" role="button" >View more</span>
-					<!-- <img src="/dist/assets/images/bg_aboutus_origin.png" alt="about us"> -->
-				</a>
-			</div>
-
-			<div class="btm-banner-wrap black"> 
-				<a role="button" class="about-banner" href="#">
-					<p class="btm-title">Recruit</p>
-					<span class="btm-txt">디앤디모바일과 같이 생각할 ‘DND CREW’를 초대합니다</span>
-					<span class="view-more-btn" role="button" >View more</span>
-					<!-- <img src="/dist/assets/images/bg_aboutus_origin.png" alt="about us"> -->
-				</a>
-
-			</div>
-			<div class="btm-banner-wrap white">
-				<a role="button" class="about-banner" href="#">
-					<p class="btm-title">CONTACT</p>
-					<span class="btm-txt">풍부한 경험과 전문성으로 보답합니다</span>
-					<span class="view-more-btn" role="button" >View more</span>
-					<!-- <img src="/dist/assets/images/bg_aboutus_origin.png" alt="about us"> -->
-				</a>
-			<div class="didi">
-				<video width="180" height="180" autoplay muted loop playsinline>
-					<source src="/dist/assets/download/didi.mp4" type="video/mp4">
-				</video>
-			</div>
-			</div>
-
-
-		</div>
-	</div>
+	
 </section>
 
 
 
+      </section>
+      <section class="panel btm-aboutus" id="btm-aboutus">
+        <section class="pjt-con-wrap btm-aboutus">
+  <div class="pjt-top-full">
+    <div class="pjt-title">
+      <div class="btm-banner-wrap">
+        <a role="button" class="about-banner" href="#">
+          <p class="btm-title">ABOUT US</p>
+          <span class="btm-txt">아름다운 디지털 환경을 만들어 갑니다</span>
+          <span class="view-more-btn" role="button">View more</span>
+          <!-- <img src="/dist/assets/images/bg_aboutus_origin.png" alt="about us"> -->
+        </a>
+      </div>
 
-		</section>
-		<!-- <section class="panel project-jb" id="jb">
+      <div class="btm-banner-wrap black">
+        <a role="button" class="about-banner" href="#">
+          <p class="btm-title">Recruit</p>
+          <span class="btm-txt"
+            >디앤디모바일과 같이 생각할 ‘DND CREW’를 초대합니다</span
+          >
+          <span class="view-more-btn" role="button">View more</span>
+          <!-- <img src="/dist/assets/images/bg_aboutus_origin.png" alt="about us"> -->
+        </a>
+      </div>
+      <div class="btm-banner-wrap white">
+        <a role="button" class="about-banner" href="#">
+          <p class="btm-title">CONTACT</p>
+          <span class="btm-txt">풍부한 경험과 전문성으로 보답합니다</span>
+          <span class="view-more-btn" role="button">View more</span>
+          <!-- <img src="/dist/assets/images/bg_aboutus_origin.png" alt="about us"> -->
+        </a>
+        <div class="didi">
+          <video width="180" height="180" autoplay muted loop playsinline>
+            <source src="/dist/assets/download/didi.mp4" type="video/mp4" />
+          </video>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+      </section>
+      <!-- <section class="panel project-jb" id="jb">
 			<section class="pjt-con-wrap jb">
 	<div class="pjt-top">
 		<div class="pjt-title">
@@ -653,7 +679,7 @@
 		<section class="panel project-kb-wallet" id="kb-wallet">
 	
 		</section> -->
-			<!-- footer -->
+      <!-- footer -->
 <div class="footer"><!--25.05.20 마크업 수정-->
     <div class="footer-txt-wrap"> <!--25.05.20 추가-->
         <p class="hide-mobile">We Design Your Thoughts.</p>  <!--25.05.20 font-size 수정-->
@@ -699,28 +725,30 @@
     </svg> -->
 </button>
 
-	</div>
-</body>
+    </div>
+  </body>
 
-<!-- 스크립트  -->
+  <!-- 스크립트  -->
 
-<script>
-const observer = new IntersectionObserver((entries) => {
-  entries.forEach(entry => {
-    if (entry.isIntersecting) {
-      entry.target.classList.add('active');
-    } else {
-      entry.target.classList.remove('active');
-    }
-  });
-}, {
-  threshold: 0.1, 
-  rootMargin: '0px 0px -50% 0px' 
-});
+  <script>
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("active");
+          } else {
+            entry.target.classList.remove("active");
+          }
+        });
+      },
+      {
+        threshold: 0.1,
+        rootMargin: "0px 0px -50% 0px",
+      }
+    );
 
-document.querySelectorAll('section').forEach(section => {
-  observer.observe(section);
-});
-</script>
-
+    document.querySelectorAll("section").forEach((section) => {
+      observer.observe(section);
+    });
+  </script>
 </html>

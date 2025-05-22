@@ -5222,3 +5222,112 @@
 		}
 	}
 }
+
+
+// yang
+// #my-video {
+//   width: 100%;
+//   height: 100%;
+//   object-fit: cover;
+//   border-radius: 8px;
+//   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+// }
+
+#video-overlay{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: #fff;
+  pointer-events: none;
+  clip-path: circle(0% at 50% 50%);
+  z-index: 2;
+  animation: gradientShift 8s ease-in-out infinite;
+}
+
+#overlay-text {
+//   position: absolute;
+//   top: 50%;
+//   left: 50%;
+//   transform: translate(-50%, -50%);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+  width: 100%;
+  height:100%;
+  text-align: center;
+  color: #222;
+  z-index: 3;
+  pointer-events: none;
+    .txt-wrap {
+        background-color: #fff;
+        width: 100vw;
+        height:100vh;            
+        margin-top: 296px;
+        margin-bottom: 238px;
+        display: flex;
+        justify-content: center;
+        align-items: center; 
+        .txt {
+          @include vw-font-size-pc(100); 
+          font-weight: 600;
+          color: #000;
+          line-height: 1.2;
+          @include vw-convert-pc(margin-bottom, 32);
+          text-decoration: none;
+
+          .line {
+            white-space: nowrap;
+            width: 100%;
+            text-align: center;
+            display: inline-block;
+          }
+  
+          i {
+            font-style: normal;
+            color:  #C9CACF;
+          }
+  
+          b {
+            color: #E30D40;
+          }
+
+          .icon {
+            display: inline-block;
+			      @include vw-convert-pc(width, 80);
+			      @include vw-convert-pc(height, 80);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: contain;
+            vertical-align: middle;
+			      @include vw-convert-pc(margin,0 32);
+  
+            &._snow {
+              background-image: url(/dist/assets/images/svg/icon_snow_80.svg);
+            }
+  
+            &._arrow {
+              background-image: url(/dist/assets/images/svg/icon_arrow_80.svg);
+            }
+          }
+        }
+      }
+}
+
+
+@keyframes gradientShift {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+	}
+
+	  .portfolio-item  {
+		visibility: hidden;
+	  }
