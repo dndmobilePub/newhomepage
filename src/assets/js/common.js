@@ -59,36 +59,6 @@ tl.from(".menu-bg span", {
   ease: "Expo.easeInOut",
 });
 
-// if( width <= 767) {
-//   tl.from('.logo--white', {
-//     duration:0,
-//     opacity:1,
-//     x:"0%",
-//     stagger: 0.1,
-//     ease: 'Expo.easeInOut'
-//   });
-
-//   tl.fromTo('.logo--white .fill-black', {
-//     duration:0,
-//     fill:'#000',
-//     ease: 'Expo.easeInOut'
-//     },
-//     {
-//       fill:'#fff'
-//     }
-//   );
-
-//   tl.fromTo('.logo--white a' , {
-//     duration: 0,
-//     color:'#000',
-//     ease: 'Expo.easeInOut'
-//     },
-//     {
-//       color:'#fff'
-//     }
-//   )
-// }
-
 tl.from(
   ".main-menu li a",
   {
@@ -111,20 +81,6 @@ tl.from(
   },
   "-=1"
 );
-
-//tl.from('.line', {
-//	duration:0.3,
-//	scaleX: 0,
-//	transformOrigin: "0px 0px",
-//});
-
-//tl.from('.social-links li', {
-//	duration: 0.8,
-//	y:"-100%",
-//	opacity:0,
-//	stagger: 0.1,
-//	ease: 'Expo.easeInOut'
-//} , "-=0.5");
 
 menuBar.reverse();
 tl.reverse();
