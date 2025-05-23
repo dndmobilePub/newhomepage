@@ -59,64 +59,64 @@
     .pjt-top-full {
       padding: 0;
     }
-    // .intro-thumnail {
-    //   .txt-wrap {
-    //     background-color: #fff;
-    //     width: 100%;
-    //     height:100%;            
-    //     margin-top: 296px;
-    //     margin-bottom: 238px;
-    //     display: flex;
-    //     justify-content: center;
-    //     align-items: center; 
-    //     .txt {
-    //       @include vw-font-size-pc(100); 
-    //       font-weight: 600;
-    //       color: #000;
-    //       line-height: 1.2;
-    //       @include vw-convert-pc(margin-bottom, 32);
-    //       text-decoration: none;
+//     // .intro-thumnail {
+//     //   .txt-wrap {
+//     //     background-color: #fff;
+//     //     width: 100%;
+//     //     height:100%;            
+//     //     margin-top: 296px;
+//     //     margin-bottom: 238px;
+//     //     display: flex;
+//     //     justify-content: center;
+//     //     align-items: center; 
+//     //     .txt {
+//     //       @include vw-font-size-pc(100); 
+//     //       font-weight: 600;
+//     //       color: #000;
+//     //       line-height: 1.2;
+//     //       @include vw-convert-pc(margin-bottom, 32);
+//     //       text-decoration: none;
 
-    //       .line {
-    //         white-space: nowrap;
-    //         width: 100%;
-    //         text-align: center;
-    //         display: inline-block;
-    //       }
+//     //       .line {
+//     //         white-space: nowrap;
+//     //         width: 100%;
+//     //         text-align: center;
+//     //         display: inline-block;
+//     //       }
   
-    //       i {
-    //         font-style: normal;
-    //         color:  #C9CACF;
-    //       }
+//     //       i {
+//     //         font-style: normal;
+//     //         color:  #C9CACF;
+//     //       }
   
-    //       b {
-    //         color: #E30D40;
-    //       }
+//     //       b {
+//     //         color: #E30D40;
+//     //       }
 
-    //       .icon {
-    //         display: inline-block;
-		// 	      @include vw-convert-pc(width, 80);
-		// 	      @include vw-convert-pc(height, 80);
-    //         background-repeat: no-repeat;
-    //         background-position: center;
-    //         background-size: contain;
-    //         vertical-align: middle;
-		// 	      @include vw-convert-pc(margin,0 32);
+//     //       .icon {
+//     //         display: inline-block;
+// 		// 	      @include vw-convert-pc(width, 80);
+// 		// 	      @include vw-convert-pc(height, 80);
+//     //         background-repeat: no-repeat;
+//     //         background-position: center;
+//     //         background-size: contain;
+//     //         vertical-align: middle;
+// 		// 	      @include vw-convert-pc(margin,0 32);
   
-    //         &._snow {
-    //           background-image: url(/dist/assets/images/svg/icon_snow_80.svg);
-    //         }
+//     //         &._snow {
+//     //           background-image: url(/dist/assets/images/svg/icon_snow_80.svg);
+//     //         }
   
-    //         &._arrow {
-    //           background-image: url(/dist/assets/images/svg/icon_arrow_80.svg);
-    //         }
-    //       }
-    //     }
-    //   }
-    // }
-  }
+//     //         &._arrow {
+//     //           background-image: url(/dist/assets/images/svg/icon_arrow_80.svg);
+//     //         }
+//     //       }
+//     //     }
+//     //   }
+//     // }
+//   }
 
-.box-lst {
+// .box-lst {
   width:calc((100% - 24px)/2);
 
 
@@ -859,7 +859,7 @@ height: 100%;
 
     video {
     width: 100%;
-    height: auto;
+    height: 100%;
     display: block;
     z-index: 1;
   }
