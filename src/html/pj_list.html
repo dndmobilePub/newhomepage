@@ -1,8 +1,25 @@
 <!DOCTYPE html>
 <html lang="ko">
-  @@include('./include/head.html') @@include('./include/new_header.html')
+  @@include('./include/head.html')
 
   <body>
+<div class="pjt-header-wrap">
+	<p class="pjt-title"></p>
+	<ul class="nav-swiper">
+	<li>
+		<a class="ico-prev" href="#" aria-label="이전 콘텐츠"></a>
+		<span class="visually-hidden">이전</span>
+	</li>
+	<li>
+		<a class="ico-next" href="#" aria-label="다음 콘텐츠"></a>
+		<span class="visually-hidden">다음</span>
+	</li>
+	<li>
+		<a class="ico-close" href="#" aria-label="닫기"></a>
+		<span class="visually-hidden">닫기</span>
+	</li>
+	</ul>
+</div>
     <section
       class="pjt-con-wrap jb"
       data-index="0"
@@ -86,10 +103,7 @@
       </div>
     </section>
 
-    <section
-      class="pjt-con-wrap kb-wallet"
-      data-index="1"
-      data-title="KB금융그룹xDNDMOBILE"
+    <section class="pjt-con-wrap kb-wallet" data-index="1" data-title="KB금융그룹xDNDMOBILE"
     >
       <div class="pjt-intro">
         <div class="pjt-title">
@@ -299,66 +313,54 @@
     </section>
   </body>
 
-  <script>
-    $(document).ready(function () {
-      const $sections = $(".pjt-con-wrap");
-      let currentIndex = 0;
+  <script> 
+  $(document).ready(function () {
+    const $sections = $(".pjt-con-wrap");
+    const $title = $(".pjt-header-wrap .pjt-title");
+    const $navButtons = $(".nav-swiper a").not(".ico-close"); // 닫기 버튼 제외
+    let currentIndex = 0;
 
-      function showSection(index) {
-        $sections.hide().eq(index).fadeIn();
+    // section이 1개일 경우 이전/다음 버튼 비활성화
+    if ($sections.length <= 1) {
+      $navButtons.addClass("disabled");
+    }
+
+    function showSection(index) {
+      $sections.hide().eq(index).fadeIn();
+      const newTitle = $sections.eq(index).data("title");
+      $title.text(newTitle);
+    }
+
+    showSection(currentIndex);
+
+    // 다음 버튼
+    $(".ico-next").on("click", function (e) {
+      e.preventDefault();
+      if ($(this).hasClass("disabled")) return;
+
+      if (currentIndex < $sections.length - 1) {
+        currentIndex++;
+        showSection(currentIndex);
       }
-
-      showSection(currentIndex);
-
-      // 다음 버튼 클릭
-      $(".ico-next").on("click", function (e) {
-        e.preventDefault();
-        if (currentIndex < $sections.length - 1) {
-          currentIndex++;
-          showSection(currentIndex);
-        }
-      });
-
-      // 이전 버튼 클릭
-      $(".ico-prev").on("click", function (e) {
-        e.preventDefault();
-        if (currentIndex > 0) {
-          currentIndex--;
-          showSection(currentIndex);
-        }
-      });
     });
 
-    $(document).ready(function () {
-      const $sections = $(".pjt-con-wrap");
-      const $title = $(".pjt-header-wrap .pjt-title");
-      let currentIndex = 0;
+    // 이전 버튼
+    $(".ico-prev").on("click", function (e) {
+      e.preventDefault();
+      if ($(this).hasClass("disabled")) return;
 
-      function showSection(index) {
-        $sections.hide().eq(index).fadeIn();
-
-        // 현재 section의 data-title로 header title 변경
-        const newTitle = $sections.eq(index).data("title");
-        $title.text(newTitle);
+      if (currentIndex > 0) {
+        currentIndex--;
+        showSection(currentIndex);
       }
-
-      showSection(currentIndex);
-
-      $(".ico-next").on("click", function (e) {
-        e.preventDefault();
-        if (currentIndex < $sections.length - 1) {
-          currentIndex++;
-          showSection(currentIndex);
-        }
-      });
-
-      $(".ico-prev").on("click", function (e) {
-        e.preventDefault();
-        if (currentIndex > 0) {
-          currentIndex--;
-          showSection(currentIndex);
-        }
-      });
     });
+
+    // 닫기 버튼은 항상 동작 가능 (원하는 동작을 아래에 작성)
+    $(".ico-close").on("click", function (e) {
+      e.preventDefault();
+      // 예: 페이지 닫기 또는 모달 닫기 등
+      console.log("닫기 버튼 동작");
+    });
+  });
   </script>
 </html>
